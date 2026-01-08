@@ -16,9 +16,7 @@ The core idea is to model each class-conditional distribution as a **mixture of 
 ### Inference
 - Classification is performed using **Bayesian decision theory**
 - The predicted label maximizes the posterior probability:
-  \[
-  \arg\max_c \; P(y=c)\,P(x \mid y=c)
-  \]
+- `argmax_c P(y = c) · P(x | y = c)`
 
 ### Handling Missing Pixels
 - For censored images, likelihoods are computed by **marginalizing over unobserved pixels**
@@ -29,7 +27,7 @@ The core idea is to model each class-conditional distribution as a **mixture of 
 
 ## Experiments
 
-Experiments were conducted by varying the number of READMExture components:
+Experiments were conducted by varying the number of mixture components:
 
 **K = 1, 2, 5, 10, 15, 20**
 
@@ -53,14 +51,7 @@ Representative plots and reconstruction examples are included in the repository 
 
 ## Contents
 
-- GMM training and inference code
-- Censored classification and reconstruction routines
-- Accuracy vs. K plots
-- Reconstruction visualizations
-- Detailed mathematical and experimental report
-
----
-
-## Author
-
-**Md Mahfooz Ansari**
+- GMM training and inference code  
+- Censored classification and reconstruction routines  
+- Accuracy vs. K plots  
+- Reconstruction visualizations  
